@@ -1,17 +1,17 @@
 # Marcelo Viagens — página de divulgação
 
-Página responsiva para divulgar viagens e solicitar orçamentos para Marcelo, com base em Palmas–TO.
+Página responsiva para divulgar fretamento, turismo regional e viagens em grupo saindo de Palmas - TO. A versão atual usa fotos reais da van fornecidas pelo proprietário, com recortes feitos para remover interfaces de Instagram/WhatsApp.
 
-## Recursos
-- Página responsiva para celular e computador.
-- Seções de serviços, apresentação e dúvidas frequentes.
-- Formulário com origem, destino, datas, quantidade de passageiros e detalhes.
-- Prepara mensagem para envio via WhatsApp, sem armazenar os dados no site.
+## Conteúdo
 
-## Configurar WhatsApp
-No arquivo `index.html`, localize `const WHATSAPP_MARCELO = "";` e preencha com o número completo, usando apenas dígitos. Exemplo: `const WHATSAPP_MARCELO = "5563999999999";`.
+A página apresenta veículos novos, conforto & segurança, bancos reclináveis, Starlink, fretamento, turismo, montagem de grupos de viagem, turismo regional e a informação de serviço autorizado ANTT. A galeria usa seis fotos locais selecionadas e abre as imagens em tamanho maior.
 
-Antes de divulgar, troque as imagens de referência por fotos reais da van e confirme quais serviços são oferecidos.
+O formulário reúne nome, telefone, origem, destino, datas, quantidade de passageiros, tipo de viagem e detalhes. Ao enviar, prepara uma mensagem para o WhatsApp configurado no próprio `index.html`; o site não armazena os dados.
 
 ## Publicar
-Pode ser publicado no GitHub Pages ou importado na Vercel como site estático. Não necessita banco de dados.
+
+O projeto é estático e pode ser publicado no GitHub Pages ou importado na Vercel. Não necessita de banco de dados, build ou dependências externas. Basta servir a raiz do repositório como diretório público.
+
+## Configurar WhatsApp
+
+No arquivo `index.html`, localize `const WHATSAPP_MARCELO` para trocar o número. Use o número completo com DDI e DDD, somente dígitos.
