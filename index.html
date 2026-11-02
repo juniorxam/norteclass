@@ -69,6 +69,18 @@
     .hero-label strong { display: block; margin-bottom: 4px; color: var(--amber); font-size: .76rem; letter-spacing: .13em; text-transform: uppercase; }
     .hero-label span { color: #dce5ea; font-size: .91rem; }
 
+    .credibility { color: var(--white); background: var(--navy-deep); border-bottom: 1px solid rgba(255,255,255,.08); }
+    .credibility-row { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 17px 0; }
+    .credibility-copy { max-width: 300px; }
+    .credibility-copy strong { display: block; color: var(--amber); font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; }
+    .credibility-copy span { display: block; margin-top: 4px; color: #cbd5dc; font-size: .82rem; }
+    .credibility .credentials { margin-top: 0; gap: 28px; }
+    .credibility .credential { gap: 11px; }
+    .credibility .credential img { width: 55px; height: 74px; border-width: 2px; border-radius: 5px; }
+    .credibility .credential.antt img { width: 93px; height: 74px; }
+    .credibility .credential p { color: #cbd5dc; font-size: .75rem; }
+    .credibility .credential strong { color: var(--white); }
+
     .trust { color: var(--navy); background: var(--cream); border-bottom: 1px solid #ebe5d9; }
     .trust-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 21px 0; }
     .trust-item { display: flex; align-items: center; gap: 12px; font-size: .9rem; font-weight: 780; }
@@ -160,6 +172,7 @@
     @media (max-width: 900px) {
       .nav-links { display: none; }
       .hero-grid, .services-grid, .about-grid, .quote-grid { grid-template-columns: 1fr; }
+      .credibility-row { align-items: flex-start; flex-direction: column; gap: 14px; }
       .hero-grid { gap: 50px; padding-top: 64px; }
       .hero-media { min-height: 420px; }
       .hero-media img { height: 420px; }
@@ -236,6 +249,22 @@
         <div class="hero-media">
           <img src="assets/banco-reclinavel.jpg" alt="Passageiro relaxando em banco reclinável dentro da van Marcelo Viagens" width="1071" height="1004">
           <div class="hero-label"><strong>Conforto de verdade</strong><span>Bancos reclináveis, iluminação interna e espaço para o seu grupo.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="credibility" aria-label="Credenciais e autorizações">
+      <div class="wrap credibility-row">
+        <div class="credibility-copy"><strong>Credibilidade para viajar tranquilo</strong><span>Documentação e registros apresentados antes de você pedir o orçamento.</span></div>
+        <div class="credentials">
+          <div class="credential">
+            <img src="assets/cadastur-selo.png" alt="Selo Cadastur do Ministério do Turismo, cadastro 52.683.412/0001-77" width="1489" height="2105">
+            <p><strong>Cadastro Cadastur</strong>Registro nº 52.683.412/0001-77</p>
+          </div>
+          <div class="credential antt">
+            <img src="assets/antt-adesivo.png" alt="Adesivo ANTT com número 01.1837" width="1543" height="1314">
+            <p><strong>Registro ANTT</strong>Nº 01.1837 · adesivo externo</p>
+          </div>
         </div>
       </div>
     </section>
@@ -339,16 +368,6 @@
             <li>Para viagens longas, considerar até 13 passageiros; a capacidade de bagagem é de aproximadamente 10 kg por passageiro em lotação total.</li>
           </ul>
           <span class="ant">✓ Serviço autorizado ANTT · registro 01.1837</span>
-          <div class="credentials">
-            <div class="credential">
-            <img src="assets/cadastur-selo.png" alt="Selo Cadastur do Ministério do Turismo, cadastro 52.683.412/0001-77" width="1489" height="2105">
-            <p><strong>Cadastro Cadastur</strong>Registro nº 52.683.412/0001-77<br>Ministério do Turismo</p>
-            </div>
-            <div class="credential antt">
-              <img src="assets/antt-adesivo.png" alt="Adesivo ANTT com número 01.1837" width="1543" height="1314">
-              <p><strong>Registro ANTT</strong>Nº 01.1837<br>Adesivo externo</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
