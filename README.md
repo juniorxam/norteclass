@@ -1,4 +1,4 @@
-# Marcelo Viagens — página de divulgação
+# NORTECLASS — página de divulgação
 
 Página responsiva para divulgar fretamento, turismo regional e viagens em grupo saindo de Palmas - TO. A versão atual usa fotos reais da van fornecidas pelo proprietário, com recortes feitos para remover interfaces de Instagram/WhatsApp.
 
@@ -14,4 +14,4 @@ O projeto é estático e pode ser publicado no GitHub Pages ou importado na Verc
 
 ## Configurar WhatsApp
 
-No arquivo `index.html`, localize `const WHATSAPP_MARCELO` para trocar o número. Use o número completo com DDI e DDD, somente dígitos.
+No arquivo `index.html`, localize `const WHATSAPP_NORTECLASS` para trocar o número. Use o número completo com DDI e DDD, somente dígitos.
